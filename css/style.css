@@ -1,0 +1,133 @@
+:root {
+    --color-orange: hsl(31, 77%, 52%);
+    --color-dark-cyan: hsl(184, 100%, 22%);
+    --color-very-dark-cyan: hsl(179, 100%, 13%);
+    --color-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --color-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+    font-size: 15px;
+   /* font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif; */
+    background-color: var(--color-light-gray);
+}
+
+#container {
+    position: absolute;
+    top:15%;
+    height: 70vh;
+    left: 15%;
+    width: 70%;
+    margin: auto;
+    display: flex;
+}
+
+#container div {
+    width: 100%;
+    padding: 3rem 4rem 2.5rem 3rem;
+}
+#container p {
+    color: var(--color-transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.6rem;
+    margin-bottom: 5.5rem;
+    font-size: 1.1rem;
+    max-height: 30%;
+}
+#container a {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--color-transparent-white);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+}
+img {
+    margin-bottom: 2rem;
+}
+h1 {
+    min-width: 100%;
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: var(--color-transparent-white);
+    font-family: 'Big Shoulders Display', cursive;
+    margin-bottom: 2rem;
+}
+.sedans {
+    background-color: var(--color-orange);
+}
+.sedans a {
+    color: var(--color-orange);
+}
+.suvs {
+    background-color: var(--color-dark-cyan);
+}
+.suvs a {
+    color: var(--color-dark-cyan);
+}
+.luxury {
+    background-color: var(--color-very-dark-cyan);
+}
+.luxury a {
+    color: var(--color-very-dark-cyan);
+}
+
+@media screen and (max-width:1154px) {
+    #container p {
+        font-size: 0.9rem;
+        margin-bottom: 7rem;
+    }
+    #container a {
+        font-size: 0.8rem;
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1002px) {
+    #container div {
+        padding: 3rem 3rem 2.5rem 2rem;
+    }
+}
+
+@media screen and (max-width: 862px) {
+    #container div {
+        padding: 3rem 1rem 1.5rem 1rem;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    #container {
+        position: absolute;
+        top:15%;
+        height: 70vh;
+        left: 0%;
+        width: 100%;
+        margin: auto;
+        display: flex;
+    }
+    #container p {
+        font-size: 0.8rem;
+        margin-bottom: 8rem;
+    }
+    #container a {
+        font-size: 0.7rem;
+        padding: 0.5rem 0.75rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    #container {
+        top: 0%;
+        bottom: 0%;
+        left: 5%;
+        width: 90%;
+        margin: 10% auto;
+        flex-direction: column;
+    }
+    #container div {
+        width: 100%;
+        padding: 3rem 4rem 2.5rem 3rem;
+    }
+}
+
